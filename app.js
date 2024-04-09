@@ -4,6 +4,7 @@ createApp({
 data() {
     return {
         emails: [],
+        numeroMails: 10
         }
     },
 
@@ -20,7 +21,7 @@ data() {
     },
 
     created(){
-        this.newEmail(10)
+        this.newEmail(this.numeroMails)
     }
 
 }).mount('#app')
